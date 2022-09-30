@@ -1,0 +1,20 @@
+DBTOOLS LOGIN
+-JED F.BATCH ---batchname
+-field number (enter)
+-changeing field(3)(12)
+to come out from that field -esc-
+to save changes -(small) s-
+to exit -x-
+-----------
+to check job list
+-JQL
+-LIST-ITEM F.JOB.LIST.12
+-LIST-ITEM F.RELEASE.DATA
+-----------
+1. Stop TSM and all services
+2. From DBTools JQL, please execute the below command.
+CLEAR-FILE F.JOB.LIST.12
+3. From DBTools JED prompt, delete the below BATCH.STATUS record.
+JED F.BATCH.STATUS T24.UPGRADE-T24.UPGRADE-1
+4. Once the above steps are completed, restart TSM and T24.UPGRADE service.
+The service will run without any errors.

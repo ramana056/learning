@@ -1,0 +1,8 @@
+1	Clear TSA.STATUS
+2	Clear BATCH.STATUS
+3	Clear EB.EOD.ERROR
+4	Ensure no other TSA Services running in the Background
+5	Start TS, I COB thru Browser
+6	Start TS, I TSM Thru Browser
+7	Hit START.TSM thru TAFJEE Servlet
+8	Monitor the progress in ENQ AGENT.STATUS with CURRENT.SERVICE EQ COB
